@@ -1,0 +1,465 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Gupter:wght@400;500;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Merriweather", serif;
+}
+:root{
+    --primary-color:#ffffff;
+    --secondary-color:rgba(0,0,0,0.9);
+    --redish-color:#dd0707;
+    --insta-color:#e1306c;
+    --face-color:#4267b2;
+    --twit-color:#1da1f2;
+    --what-color:#25D366;
+    --you-color:#ff0000;
+}
+html,body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: "Merriweather", serif;
+    color: var(--primary-color);
+}  
+.Main-container{
+    margin: 0 auto;
+    max-width: 1500px;
+}
+.Main-content{
+    background: var(--secondary-color);
+}
+.section{
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+/* Navbar  */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.navbar .logo{
+    cursor: pointer;
+}
+.navbar .logo  img{
+    height: 17vh;
+    width: 15vw;
+    margin: 0px 0px;
+}
+.navbar ul{
+    float: right;
+    list-style-type: none;
+}
+.navbar ul li{
+    display: inline-block;
+    margin:10px;
+}
+.navbar ul li a{
+    font-size: 14px;
+    background-color: var(--primary-color);
+    padding: 7px 35px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: var(--secondary-color);
+    transition: 0.3s;
+}
+.navbar ul li a:hover{
+    color: var(--primary-color);
+    border: 2px solid var(--redish-color);
+    background: transparent;
+}
+.navbar a.joinbtn1 button{
+    text-decoration: none;
+    font-size: 14px;
+    margin-right: 35px;
+    padding: 7px 30px;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    border-radius: 20px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.navbar a.joinbtn1 button:hover{
+    transform: scale(1.1);
+    border: 2px solid var(--redish-color);
+    box-shadow: 0 3px 30px 0px var(--redish-color);
+}
+.navbar a.joinbtn1 button:active{
+    padding: 6px 27px;
+}
+.navbar .check-label{
+    font-size: 30px;
+    /* float: right; */
+    /* line-height: 80px; */
+    cursor: pointer;
+    margin-right: 40px;
+    display: none;
+}
+.navbar #check{
+    display: none;
+}
+
+/* Home page  */
+
+.home{
+    background: url(./images/Home\ section.png);
+    background-size: 100vw 100vh;
+}
+.home-info{
+    width: 50%;
+    margin: 19% 0 0 10%;
+    display: inline-block;
+}
+.home-info h1{
+    font-size: 34px;
+}
+.home-info h3{
+    color: var(--redish-color);
+    font-size: 28px;
+}
+.home-info .para{
+    margin-bottom: 20px;
+}
+.home-info a{
+    text-decoration: none;   
+}
+.home-info a.joinbtn2{
+    font-size: 16px;
+    padding: 9px 32px;
+    color: var(--primary-color);
+    border: none;
+    border-radius: 20px;
+    background-color: var(--redish-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.home-info a.joinbtn2:hover{
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+
+/* Fee structure page */
+
+.fees{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.plan{
+    margin-top: 5%;
+}
+.plan h1{
+    font-size: 45px;
+}
+.fees-container {
+    height: auto;
+    width: 170vh;
+    margin-top: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fees-container .pricing{
+    height: 370px;
+    width: 300px;
+    margin: 0 15px;
+    border-radius: 20px;
+    box-shadow: -4px -4px 6px 5px rgba(221, 7, 7, 0.6);
+}
+.pricing{
+    text-align: center;
+}
+.fees-container .pricing p .i{
+    font-size: 32px;
+    margin: 23px 0px 0px;
+    color: #f74242;
+}
+.fees-container .pricing .head3{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 15px 0px 10px;
+}
+.fees-container .pricing .head2{
+    font-size: 26px;
+    color: #f74242;
+}
+.fees-container .pricing p{
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.fees-container .pricing .buybtn{
+    margin-top: 13px;
+    font-size: 16px;
+    padding: 10px 35px;
+    color: var(--primary-color);
+    border: none;
+    border-radius: 20px;
+    background-color: var(--redish-color);
+    cursor: pointer;
+    font-style: italic;
+    transition: 0.4s;
+}
+.fees-container .pricing .buybtn:hover{
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* About page */
+
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.abhead h1{
+    font-size: 45px;
+    margin: 50px 0px;
+    text-align: center;
+}
+.about-container .about-img{
+    border: 2px solid var(--primary-color);
+    margin-left: 5%;
+}
+.about-img img{
+    height: 78vh;
+    width: 54vw;
+}
+.about-container .aboutus{
+    margin-left: 3%;
+    margin-right: 6%;
+}
+
+.about-container .aboutus h1{
+    font-size: 47px;
+}
+.about-container .aboutus p.abpara1,
+.about-container .aboutus p.abpara2,
+.about-container .aboutus p.abpara3,
+.about-container .aboutus p.abpara4{
+    margin-top: 12px;
+}
+
+.about-container .aboutus .fclassbtn{
+    margin-top: 22px;
+    font-size: 16px;
+    padding: 10px 35px;
+    color: var(--primary-color);
+    border: none;
+    border-radius: 20px;
+    background-color: var(--redish-color);
+    cursor: pointer;
+    font-style: italic;
+    transition: 0.3s;
+}
+
+.about-container .aboutus .fclassbtn:hover{
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Contact Page */
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-section{
+    width: 100%;
+}
+.contact-section .conhead{
+    margin: 0px 0 50px;
+}
+.contact-section .conhead h1{
+    text-align: center;
+    font-size: 43px;
+}
+.contact-section .contact-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-section .contact-info .submitform{
+    height: 350px;
+    width: 300px;
+    box-shadow: 4px 4px 6px 5px rgba(221, 7, 7, 0.6);
+    border-radius: 8px;
+}
+.contact-section .contact-info .submitform form{
+    display: flex;
+    flex-direction: column;
+    padding: 55px 35px;
+
+}
+.contact-section .contact-info .submitform form input{
+    padding: 8px 28px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 17px;
+    background-color: transparent;
+    border: 1px solid var(--redish-color);
+}
+.contact-section .contact-info .submitform form input:focus{
+    background-color: #ee6060;
+    color: var(--primary-color);
+    font-size: 14px;
+}
+.contact-section .contact-info .submitform form input::placeholder{
+    color: var(--primary-color);
+    opacity: 0.5;
+}
+.contact-section .contact-info .submitform form .subbtn{
+    margin-top: 13px;
+    font-size: 16px;
+    padding: 8px 32px;
+    color: var(--primary-color);
+    border: none;
+    border-radius: 20px;
+    background-color: var(--redish-color);
+    cursor: pointer;
+    font-style: italic;
+    transition: 0.4s;
+}
+.contact-section .contact-info .submitform form .subbtn:hover{
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+.contact-section .contact-info .submitform form .subbtn:active{
+    padding: 7px 28px;
+}
+.contact-section .contact-info .gym-info{
+    font-size: 16px;
+}
+.contact-section .contact-info .gym-info .timing{
+    padding-left: 50px;
+}
+.contact-section .contact-info .gym-info h5 {
+    padding-bottom: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+.contact-section .contact-info .gym-info h4.email {
+    padding-bottom: 15px;
+}
+.contact-section .contact-info .gym-info h4 .i{
+    margin-right: 15px;
+    padding: 11px;
+    border-radius: 50%;
+    background-color: #f74242;
+}
+
+/* Footer section */
+footer{
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background-color: var(--secondary-color);
+    margin-top: 0%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+}
+.social-icons .button{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    margin: 0 5px;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s ease-out;
+    box-shadow: 2px 2px 2px 2px var(--redish-color);
+}
+.social-icons .button:hover{
+    width: 180px;
+}
+.social-icons .button:nth-child(1):hover{
+    box-shadow: 0px 3px 30px 0px var(--insta-color);
+}
+.social-icons .button:nth-child(2):hover{
+    box-shadow: 0px 3px 30px 0px var(--face-color);
+}
+.social-icons .button:nth-child(3):hover{
+    box-shadow: 0px 3px 30px 0px var(--twit-color);
+}
+.social-icons .button:nth-child(4):hover{
+    box-shadow: 0px 3px 30px 0px var(--what-color);
+}
+.social-icons .button:nth-child(5):hover{
+    box-shadow: 0px 3px 30px 0px var(--you-color);
+}
+.social-icons .button .icon{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    line-height: 60px;
+    text-align: center;
+    transition: all 0.4s ease-out;
+}
+.social-icons .button:nth-child(1):hover .icon{
+    background: var(--insta-color);
+}
+.social-icons .button:nth-child(2):hover .icon{
+    background: var(--face-color);
+}
+.social-icons .button:nth-child(3):hover .icon{
+    background: var(--twit-color);
+}
+.social-icons .button:nth-child(4):hover .icon{
+    background: var(--what-color);
+}
+.social-icons .button:nth-child(5):hover .icon{
+    background: var(--you-color);
+}
+.social-icons .button .icon .i{
+    color: var(--primary-color);
+    font-size: 25px;
+    line-height: 50px;
+    transition: all 0.4s ease-out;
+}
+.social-icons .button:hover .icon .i{
+    color: #fff;
+}
+.social-icons .button button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.social-icons .button span{
+   font-size: 18px;
+   margin-left: 10px;
+   font-weight: 500;
+   line-height: 50px;
+   transition: all 0.4s ease-out;
+}
+.social-icons .button:nth-child(1) span{
+    color: var(--insta-color);
+}
+.social-icons .button:nth-child(2) span{
+    color: var(--face-color);
+}
+.social-icons .button:nth-child(3) span{
+    color: var(--twit-color);
+}
+.social-icons .button:nth-child(4) span{
+    color: var(--what-color);
+}
+.social-icons .button:nth-child(5) span{
+    color: var(--you-color);
+}
+

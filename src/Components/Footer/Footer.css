@@ -1,0 +1,147 @@
+footer{
+    display: grid;
+    place-items: center;
+    padding: 0.63rem 0;
+    background-color: var(--secondary-color);
+    border-top: 1px solid var(--foo-border-top);
+
+}
+.social-icons .button{
+    display: inline-block;
+    height: 3.13rem;
+    width: 3.11rem;
+    background: transparent;
+    margin: 0 5px;
+    border-radius: 3.13rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s ease-out;
+}
+.social-icons .button:hover{
+    width: 11.25rem;
+}
+.social-icons .button:nth-child(1){
+    box-shadow: 0px 3px 30px 0px var(--insta-color);
+}
+.social-icons .button:nth-child(2){
+    box-shadow: 0px 3px 30px 0px var(--face-color);
+}
+.social-icons .button:nth-child(3){
+    box-shadow: 0px 3px 30px 0px var(--twit-color);
+}
+.social-icons .button:nth-child(4){
+    box-shadow: 0px 3px 30px 0px var(--what-color);
+}
+.social-icons .button:nth-child(5){
+    box-shadow: 0px 3px 30px 0px var(--you-color);
+}
+.social-icons .button .icon{
+    display: inline-block;
+    height: 3.13rem;
+    width: 3.13rem;
+    border-radius: 3.13rem;
+    line-height: 3.75rem;
+    text-align: center;
+    transition: all 0.4s ease-out;
+}
+.social-icons .button:nth-child(1) .icon{
+    background: var(--insta-color);
+}
+.social-icons .button:nth-child(2) .icon{
+    background: var(--face-color);
+}
+.social-icons .button:nth-child(3) .icon{
+    background: var(--twit-color);
+}
+.social-icons .button:nth-child(4) .icon{
+    background: var(--what-color);
+}
+.social-icons .button:nth-child(5) .icon{
+    background: var(--you-color);
+}
+.social-icons .button .icon .i{
+    color: var(--primary-color);
+    font-size: 1.56rem;
+    line-height: 3.13rem;
+    transition: all 0.4s ease-out;
+}
+.social-icons .button:hover .icon .i{
+    color: #fff;
+}
+.social-icons .button button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.social-icons .button span{
+   font-size: 1.13rem;
+   margin-left: 0.63rem;
+   font-weight: 500;
+   line-height: 3.13rem;
+   transition: all 0.4s ease-out;
+}
+.social-icons .button:nth-child(1) span{
+    color: var(--insta-color);
+}
+.social-icons .button:nth-child(2) span{
+    color: var(--face-color);
+}
+.social-icons .button:nth-child(3) span{
+    color: var(--twit-color);
+}
+.social-icons .button:nth-child(4) span{
+    color: var(--what-color);
+}
+.social-icons .button:nth-child(5) span{
+    color: var(--you-color);
+}
+footer p{
+    font-size: 0.85rem;
+    margin: 0.75rem;
+    color: var(--footer-par); 
+}
+
+/* Responsive */
+@media(max-width:370px){
+    .social-icons .button{
+        display: inline-block;
+        height: 2.8rem;
+        width: 2.75rem;
+        background: transparent;
+        margin: 0 5px;
+        border-radius: 3.13rem;
+        cursor: pointer;
+        overflow: hidden;
+        transition: all 0.4s ease-out;
+    }
+    .social-icons .button:hover{
+        width: 10.75rem;
+    }
+    .social-icons .button .icon{
+        display: inline-block;
+        height: 2.8rem;
+        width: 2.75rem;
+        border-radius: 3.13rem;
+        line-height: 3.75rem;
+        text-align: center;
+        transition: all 0.4s ease-out;
+    }
+    .social-icons .button .icon .i{
+        color: var(--primary-color);
+        font-size: 1.5rem;
+        line-height: 2.13rem;
+        transition: all 0.4s ease-out;
+    }
+    .social-icons .button span{
+        font-size: 1rem;
+        margin-left: 0.63rem;
+        font-weight: 500;
+        line-height: 2.13rem;
+        transition: all 0.4s ease-out;
+     }
+    footer p{
+        font-size: 0.7rem;
+        margin: 0.75rem;
+        color: var(--footer-par); 
+    }
+}

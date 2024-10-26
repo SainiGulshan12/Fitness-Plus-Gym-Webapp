@@ -1,0 +1,68 @@
+.workout{
+    display: flex;
+    flex-direction: column;
+}
+.workplan{
+    text-align: center;
+    margin: 3.12rem 0;
+    cursor: pointer;
+
+}
+.workplan h1{
+    position: relative;
+    font-size: 2.81rem;
+}
+.workplan span{
+    color: var(--yel-color);
+}
+.workplan h1::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.14rem;
+    top: 3.5rem; 
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    background: var(--yel-color);
+    transition: width 0.6s ease-out;
+}
+.workplan h1:hover::after{
+    width: 23rem;
+}
+.workimages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.workimages img{
+    object-fit: cover;
+    height: 14rem;
+    width: 24rem;
+    margin: 0.75rem;
+    border-radius: 0.50rem;
+}
+
+/* Responsive */
+
+@media(max-width:420px){
+    .workplan h1{
+        font-size: 2.5rem;
+    }
+    .workplan h3{
+        font-size: 1rem;
+    }
+    .workimages img{
+        width: 20rem;
+    }
+}
+@media(max-width:350px){
+    .workplan h1{
+        font-size: 2.3rem;
+    }
+    .workimages img{
+        width: 17rem;
+        height: 12rem;
+    }
+}

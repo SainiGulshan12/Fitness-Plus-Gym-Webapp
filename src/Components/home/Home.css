@@ -1,0 +1,108 @@
+.home{
+    background: url(../../images/homepage.png);
+    background-size: 100vw 100vh;
+}
+.home-info{
+    width: 42rem;
+    margin: 17rem 0 0 6rem;
+    display: inline-block;
+}
+.home-info h1{
+    font-size: 2.13rem;
+}
+.home-info h3{
+    color: var(--yel-color);
+    font-size: 1.75rem;
+}
+.home-info .para{
+    margin-bottom: 1.25rem;
+}
+
+.home-info .joinbtn2{
+    font-size: 1em;
+    padding: 0.56em 2em;
+    color: var(--btn-color);
+    border: none;
+    border-radius: 1.25em;
+    background-color: var(--yel-color);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.home-info .joinbtn2:hover{
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+/* Responsive */
+
+@media(max-width:1000px){
+    .home-info{
+        margin: 15rem 0 0 5rem;
+    }
+}
+@media(max-width:800px){
+    .home-info{
+        width: 33rem;
+        margin: 13rem 0 0 4rem;
+    }
+    .home-info h1{
+        font-size: 2rem;
+    }
+    .home-info h3{
+        color: var(--yel-color);
+        font-size: 1.5rem;
+    }
+    .home-info .para{
+        font-size: 0.9rem;
+    }
+    .home-info .joinbtn2{
+        font-size: 0.85rem;
+    }
+}
+@media(max-width:600px){
+    .home-info{
+        width: 26rem;
+        margin: 13rem 0 0 3rem;
+    }
+    .home-info h1{
+        font-size: 1.8rem;
+    }
+    .home-info h3{
+        color: var(--yel-color);
+        font-size: 1.3rem;
+    }
+    .home-info .para{
+        font-size: 0.8rem;
+    }
+    .home-info .joinbtn2{
+        font-size: 0.75rem;
+        padding: 0.4rem 1.5rem;
+    }
+}
+@media(max-width:480px){
+    .home-info{
+        width: 22rem;
+    }
+}
+@media(max-width:430px){
+    .home-info{
+        width: 18rem;
+        margin: 13rem 0 0 1.5rem;
+    }
+    .home-info h1{
+        font-size: 1.5rem;
+    }
+    .home-info h3{
+        color: var(--yel-color);
+        font-size: 1.1rem;
+    }
+    .home-info .para{
+        font-size: 0.65rem;
+        margin-bottom: 0.5rem;
+    }
+    .home-info .joinbtn2{
+        font-size: 0.65rem;
+        padding: 0.3rem 1.2rem;
+    }
+}

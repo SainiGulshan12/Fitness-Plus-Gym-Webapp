@@ -1,0 +1,200 @@
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.conhead{
+    margin: 0 0 3.13rem 0;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.conhead h1{
+    font-size: 2.69rem;
+}
+.conhead h1 span{
+    color: var(--yel-color);
+}
+.conhead h1::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.135rem;
+    top: 3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    background: var(--yel-color);
+    transition: 0.8s;
+}
+.conhead h1:hover::after{
+    width: 18rem;
+}
+.contact-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.contact-info .submitform{
+    box-shadow: 4px 4px 6px 5px var(--fe-box-shadow);
+    border-radius: 8px;
+}
+.contact-info .submitform form{
+    display: flex;
+    flex-direction: column;
+    padding: 2.19rem;
+}
+.contact-info .submitform form input,textarea{
+    width: 18rem;
+    padding: 0.50rem 1.5rem;
+    margin-top: 0.94rem;
+    border-radius: 17px;
+    background-color: transparent;
+    border: 1px solid var(--yel-color);
+}
+.contact-info .submitform form input:focus,textarea:focus{
+    background: var(--inp-focus);
+    color: var(--secondary-color);
+    font-size: 0.88rem;
+}
+.contact-info .submitform form button.subbtn{
+    text-decoration: none;
+    margin-top: 0.81rem;
+    font-size: 1.00rem;
+    padding: 0.5rem 5.9rem;
+    color: var(--btn-color);
+    border: none;
+    border-radius: 1.25rem;
+    background-color: var(--yel-color);
+    cursor: pointer;
+    font-style: italic;
+    transition: 0.4s;
+}
+.contact-info .submitform form button.subbtn:hover{
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+.contact-info .submitform form button.subbtn:active{
+    transform: scale(0.92);
+}
+.contact-info .gym-info{
+    display: flex;
+}
+.contact-info .gym-info .info{
+    margin-top: .6rem;
+}
+.contact-info .gym-info .timing{
+    /* padding-left: .5rem; */
+}
+.contact-info .gym-info h5 {
+    padding-bottom: 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+.contact-info .gym-info h4.email {
+    padding-bottom: 0.94rem;
+    padding-top: .8rem;
+}
+.contact-info .gym-info h4.address {
+    padding-top: .8rem;
+}
+.contact-info .gym-info .icons{
+    display: grid;
+}
+.contact-info .gym-info .icons .i{
+    margin-right: 0.94rem;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    color: #303030;
+    background-color: #d9d93b;
+}
+.contact-info .gym-info .icons .i-enve{
+    margin-top: 3.5rem;
+}
+.contact-info .gym-info .icons .i-loc{
+    margin-top: .5rem;
+}
+
+
+
+/* Responsive */
+
+@media(max-width:850px){
+    .contact-info {
+        flex-direction: column;
+    }
+    .conhead{
+        margin-top: 3.13rem;
+    }
+    .contact-info .gym-info {
+        margin: 3.5rem 0;
+    }
+    .contact-info .submitform form input,textarea{
+        width: 23.5rem;
+    }
+    .contact-info .submitform form button.subbtn{
+        padding: 0.5rem 8.7rem;
+    }
+}
+@media(max-width:650px){
+    .contact-info {
+        flex-direction: column;
+    }
+    .contact-info .gym-info {
+        margin: 3.5rem 0;
+    }
+    .contact-info .submitform form input,textarea{
+        width: 20rem;
+    }
+    .contact-info .submitform form button.subbtn{
+        padding: 0.5rem 7rem;
+    }
+    .contact-info .gym-info{
+        font-size: .95rem;
+    }
+}
+@media(max-width:500px){
+    .conhead h1{
+        font-size: 2.5rem;
+    }
+    .contact-info {
+        flex-direction: column;
+    }
+    .contact-info .gym-info {
+        margin: 3.5rem 0;
+    }
+    .contact-info .submitform form input,textarea{
+        width: 15rem;
+    }
+    .contact-info .submitform form button.subbtn{
+        padding: 0.5rem 4.45rem;
+    }
+    .contact-info .gym-info{
+        font-size: .85rem;
+    }
+    .contact-info .gym-info h4 .i{
+        padding: 0.6rem;
+    }
+    .contact-info .gym-info h5 {
+        font-size: 0.7rem;
+    }
+}
+@media(max-width:360px){
+    .contact-info .submitform form{
+        padding: 1.5rem;
+    }
+    .contact-info .submitform form input,textarea{
+        width: 14rem;
+    }
+    .contact-info .submitform form button.subbtn{
+        padding: 0.5rem 4rem;
+    }
+    .contact-info .gym-info{
+        margin-left: 1.5rem;
+    }
+}

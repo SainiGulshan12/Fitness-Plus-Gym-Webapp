@@ -1,0 +1,185 @@
+.abhead{
+    margin: 3.13rem 0;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+.abhead h1{
+    font-size: 2.81rem;
+
+}
+.abhead h1 span{
+    color: var(--yel-color);
+}
+.abhead h1::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.14rem;
+    top: 3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+    background: var(--yel-color);
+    transition: 0.6s ease-out;
+}
+.abhead h1:hover::after{
+    width: 16rem;
+}
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about-container .about-img{
+    border: 2px solid var(--primary-color);
+    margin-left: 5%;
+    border-radius: 8px;
+}
+.about-container .about-img img{
+    object-fit: cover;
+    height: 78vh;
+    width: 54vw;
+    border-radius: 0 8px 0 0 ;
+}
+.about-container .aboutus{
+    margin-left: 3%;
+    margin-right: 6%;
+}
+
+.about-container .aboutus h1{
+    font-size: 2.94rem;
+}
+.about-container .aboutus p.abpara1,
+.about-container .aboutus p.abpara2,
+.about-container .aboutus p.abpara3,
+.about-container .aboutus p.abpara4{
+    margin-top: 0.75rem;
+}
+
+.about-container .aboutus .fclassbtn1{
+    line-height: 5em;
+    font-size: 1em;
+    padding: 0.63em 2.19em;
+    color: var(--btn-color);
+    border: none;
+    border-radius: 1.25em;
+    background-color: var(--yel-color);
+    cursor: pointer;
+    font-style: italic;
+    transition: 0.3s;
+}
+
+.about-container .aboutus .fclassbtn1:hover{
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+}
+
+
+
+/* Responsive */
+@media(max-width:1080px){
+    .about-container .aboutus{
+        margin-right: 3%;
+    }
+}
+@media(max-width:930px){
+    .about-container .aboutus p{
+        font-size: 0.85rem;
+    }
+    .about-container .aboutus .fclassbtn1{
+        font-size: 0.9em;
+    }
+}
+@media(max-width:840px){
+    .about-container .about-img{
+        margin-left: 3%;
+    }
+    .about-container .aboutus{
+        margin-right: 1.5%;
+    }
+    .about-container .aboutus h1{
+        font-size: 2.5rem;
+    }
+    .about-container .aboutus .fclassbtn1{
+        font-size: 0.85em;
+        padding: 0.5em 1.9em;
+    }
+    .about-container .about-img img{
+        height: 68vh;
+    }
+}
+@media(max-width:720px){
+    .about-container{
+        flex-direction: column;
+    }
+    .about-container .about-img{
+        margin-left: 0;
+    }
+    .about-container .aboutus{
+        margin-right: 16.5%;
+        margin-left: 13% ;
+    }
+    .about-container .aboutus h1{
+        font-size: 2.5rem;
+    }
+    .about-container .aboutus h1.uhead1{
+        margin-top: 0.9rem;
+    }
+    .about-container .aboutus h1.uhead1::after{
+        content: ' Us';
+        color: var(--yel-color);
+    }
+    .about-container .aboutus h1.uhead2{
+        display: none;
+    }
+    .about-container .aboutus p.abpara1,
+    .about-container .aboutus p.abpara3,
+    .about-container .aboutus p.abpara4,
+    .about-container .aboutus p.abpara2{
+        margin-top: 0.5rem;
+    }
+    .about-container .aboutus .fclassbtn1{
+        font-size: 0.85em;
+        padding: 0.5em 1.9em;
+    }
+    .about-container .about-img img{
+        height: 62vh;
+        width: 80vw;
+    }
+}
+@media(max-width:500px){
+    .about-container .aboutus{
+        margin-right: 12%;
+        margin-left: 10% ;
+    }
+    .about-container .aboutus h1.uhead1::after{
+        display: none;
+    }
+    .about-container .aboutus h1.uhead2{
+        display:inline-block;
+    }
+}
+@media(max-width:440px){
+    .abhead h1{
+        font-size: 2.5rem;
+    }
+    .about-container .aboutus{
+        margin-right: 9%;
+        margin-left: 8% ;
+    }
+ .about-container .aboutus h1{
+        font-size: 2.3rem;
+    }
+    .about-container .about-img img{
+        height: 53vh;
+    }
+    .about-container .aboutus p{
+        font-size: 0.75rem;
+    }
+    .about-container .aboutus .fclassbtn1{
+        font-size: 0.75em;
+        padding: 0.5em 1.9em;
+    }
+}

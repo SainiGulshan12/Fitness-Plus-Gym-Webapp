@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a0758344.css",
+    "main.js": "/static/js/main.5945c5fd.js",
+    "static/js/453.18ee9ef3.chunk.js": "/static/js/453.18ee9ef3.chunk.js",
+    "static/media/Aboutpage.png": "/static/media/Aboutpage.3a99f718a392d58e5071.png",
+    "static/media/workout4.png": "/static/media/workout4.ce6460c17c5072eda947.png",
+    "static/media/workout5.png": "/static/media/workout5.aaf83d77920154bc38d7.png",
+    "static/media/logo.png": "/static/media/logo.0c64301cb776890c8469.png",
+    "static/media/workout1.png": "/static/media/workout1.f8202cfaa70fc1f848c5.png",
+    "static/media/workout3.png": "/static/media/workout3.c8cb6499a982f8a046c4.png",
+    "static/media/workout6.png": "/static/media/workout6.fdad13cd89abd6ee5059.png",
+    "static/media/workout2.png": "/static/media/workout2.f189cb76af1df53e777f.png",
+    "static/media/homepage.png": "/static/media/homepage.b6231d722f8701330d79.png",
+    "index.html": "/index.html",
+    "main.a0758344.css.map": "/static/css/main.a0758344.css.map",
+    "main.5945c5fd.js.map": "/static/js/main.5945c5fd.js.map",
+    "453.18ee9ef3.chunk.js.map": "/static/js/453.18ee9ef3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0758344.css",
+    "static/js/main.5945c5fd.js"
+  ]
+}
